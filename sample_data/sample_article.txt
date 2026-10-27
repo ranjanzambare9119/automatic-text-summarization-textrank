@@ -1,0 +1,9 @@
+Machine learning is a branch of artificial intelligence that allows computer systems to identify patterns in data and make predictions. It is used in healthcare, finance, agriculture, education, and transportation. Before a model can learn, data scientists often clean the data, handle missing values, and select useful features.
+
+Text summarization is an important application of natural language processing. It reduces a long document into a shorter version while attempting to preserve the main information. Extractive summarization selects sentences from the original document, while abstractive summarization generates new wording. Extractive methods are often easier to implement and explain.
+
+TextRank is a graph-based ranking algorithm inspired by PageRank. In a TextRank summarizer, each sentence is represented as a node. Similarity between sentences determines the strength of the edges connecting them. Sentences with stronger relationships to other important sentences receive higher ranking scores.
+
+This project converts sentences into TF-IDF vectors and calculates cosine similarity between each pair. It applies a PageRank-style calculation to the sentence similarity graph. The highest-ranked sentences are selected and then returned in their original order so the summary follows the source document.
+
+The system provides different summary lengths and reports word counts and compression percentage. These measurements describe how much shorter the summary is, but they do not by themselves prove that the summary is accurate or coherent. Proper evaluation should also use reference summaries and human review.
